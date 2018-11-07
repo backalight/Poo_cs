@@ -23,17 +23,20 @@ namespace Balles
             VitesseY = this.VitesseY;
             tm.Interval = 50;
             tm.Tick += bouger;
-            tm.Enabled = true;
+          
         }
 
         public PictureBall()
         {
             tm.Interval = 50;
             tm.Tick += bouger;
-            tm.Enabled = true;
+          
         }
     
-
+        public void animer()
+        {
+            tm.Enabled = true;
+        }
         public void bouger(Object sender, EventArgs e)
         {
             if (this.Left < 0) { VitesseX = -VitesseX; }

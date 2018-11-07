@@ -17,6 +17,11 @@ namespace Balles
             InitializeComponent();
         }
 
-      
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            pictureBall1.animer();
+        }
+
+       
     }
 }
